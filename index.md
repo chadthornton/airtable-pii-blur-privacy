@@ -26,7 +26,7 @@ The extension stores the following in Chrome's built-in `chrome.storage.sync` ar
 ## Permissions
 
 - `storage` — to save your preferences as described above.
-- `tabs` — to read the URL of the active tab so the popup can scope its display to the Airtable base you currently have open. The extension does not read page content from other tabs.
+- `activeTab` — to read the URL of the active tab when the popup is opened, so the popup can scope its display to the Airtable base you currently have open. The extension does not read page content from other tabs.
 - Access to `https://airtable.com/*` — required so the content script can observe the Airtable DOM and apply blur styles. The extension runs on no other site.
 
 ## Limitations
